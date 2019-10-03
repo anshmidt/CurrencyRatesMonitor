@@ -41,8 +41,7 @@ class MainActivity : AppCompatActivity(), MainViewPresenterContract.View {
 
         initDagger()
 
-        mainPresenter.onStart()
-
+        mainPresenter.onViewAttached()
     }
 
     private fun initDagger() {
@@ -70,6 +69,11 @@ class MainActivity : AppCompatActivity(), MainViewPresenterContract.View {
         }
 
         return super.onOptionsItemSelected(menuItem)
+    }
+
+    override fun onStop() {
+        super.onStop()
+        mainPresenter.onViewDetached()
     }
 
     override fun displayRate(rate: Float, currencyType: CurrencyType) {

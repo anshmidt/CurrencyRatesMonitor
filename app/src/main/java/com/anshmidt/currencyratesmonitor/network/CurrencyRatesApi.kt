@@ -7,6 +7,6 @@ import retrofit2.http.GET
 
 interface CurrencyRatesApi {
 
-    @GET(Constants.DAILY_JSON)
+    @GET(Constants.DAILY_JSON_ENDPOINT)
     fun getCurrencyRates(): Single<CurrencyRatesResponse>
 }
