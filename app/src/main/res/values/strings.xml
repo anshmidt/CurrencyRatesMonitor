@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CurrencyRatesMonitor</string>
+    <string name="refresh_menu_item">Refresh</string>
+
+    <string name="currency_rate">%1$s: %2$.2f \u20BD</string>
+    <string name="currency_rate_not_found">%1$s: not found</string>
+
+    <string name="usd_symbol">\u0024</string>
+    <string name="euro_symbol">\u20AC</string>
+</resources>
