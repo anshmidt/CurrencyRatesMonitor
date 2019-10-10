@@ -16,7 +16,7 @@ interface MainViewPresenterContract {
     interface Presenter {
         fun onViewAttached()
         fun onViewDetached()
-        fun getRateFromServer(currencyType: CurrencyType)
+        fun onRefreshButtonPressed()
     }
 
 }

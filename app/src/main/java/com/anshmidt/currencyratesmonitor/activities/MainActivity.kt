@@ -61,11 +61,7 @@ class MainActivity : AppCompatActivity(), MainViewPresenterContract.View {
         val id = menuItem.itemId
 
         when (id) {
-            R.id.action_refresh -> {
-                for (currencyType in CurrencyType.values()) {
-                    mainPresenter.getRateFromServer(currencyType)
-                }
-            }
+            R.id.action_refresh -> mainPresenter.onRefreshButtonPressed()
         }
 
         return super.onOptionsItemSelected(menuItem)
